@@ -16,6 +16,7 @@ FROM rhel7
 
 RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-10.noarch.rpm
 
+RUN rpm -ivh https://github.com/rickoliveira1/redis-openshift/raw/master/image/logrotate-3.8.6-12.el7.x86_64.rpm
 RUN yum install redis hostname -y ; yum clean all
 
 COPY redis-master.conf /redis-master/redis.conf
