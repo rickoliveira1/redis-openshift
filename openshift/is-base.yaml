@@ -5,6 +5,6 @@ metadata:
   labels:
     app: rhel7-base
     name: rhel7-base
-  name: rhel7
+  name: rhel70
 spec:
   dockerImageRepository: registry.access.redhat.com/rhel7
